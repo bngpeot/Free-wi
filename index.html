@@ -1,0 +1,49 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Login ke Free Wifi
+  </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-white min-h-screen flex flex-col items-center pt-20 px-6">
+  <header class="w-full max-w-xs mb-10">
+   <h1 class="text-left text-gray-800 text-base font-normal leading-tight">
+    Login ke Free Wifi
+   </h1>
+   <p class="text-left text-gray-500 text-xs font-normal leading-tight mt-1">
+    www.cityhotel.gotafic.com
+   </p>
+  </header>
+  <main class="flex flex-col items-center space-y-6">
+   <img alt="Black and white circular Wi-Fi FREE logo with Wi-Fi symbol on top and text Wi-Fi FREE inside circle" class="w-36 h-36" height="150" src="https://storage.googleapis.com/a1aa/image/64eb959b-02a0-4ade-d31c-2c73dc83effa.jpg" width="150"/>
+   <p class="text-center text-gray-700 text-sm font-normal leading-snug max-w-xs">
+    Tekan mulai untuk menggunakan Wi-Fi
+   </p>
+   <button onclick="playSound()" class="bg-blue-500 text-white text-sm font-medium rounded px-6 py-2 mt-2 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+    Mulai
+   </button>
+  </main>
+
+  <!-- Tambahkan elemen audio untuk prank -->
+  <audio id="prankSound" hidden>
+    <source src="ssstik.io_1744893921509.mp3" type="audio/mpeg">
+    Browser Anda tidak mendukung elemen audio
+  </audio>
+
+  <script>
+    function playSound() {
+      // Memainkan suara prank
+      const audio = document.getElementById('prankSound');
+      audio.play();
+      
+      // Tambahkan efek lain jika diperlukan (misal: redirect setelah beberapa detik)
+      // setTimeout(() => {
+      //   window.location.href = 'https://example.com/prank-page';
+      // }, 1000);
+    }
+  </script>
+ </body>
+</html>
